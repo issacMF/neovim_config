@@ -1,5 +1,6 @@
 :set number relativenumber
 :set nu rnu
+:set mouse=a
 
 " Start NERDTree when Vim starts with a directory argument.
 autocmd StdinReadPre * let s:std_in=1
@@ -158,8 +159,9 @@ nnoremap <C-l> :tabnext<CR>
 inoremap <C-h> :tabprevious<CR>
 inoremap <C-l> :tabnext<CR>
 
-
-source $HOME/.config/nvim/vim-plug/plugins.vim
+nnoremap <C-p> :F<CR>
+inoremap <C-p> :F<CR>
+vnoremap <C-p> :F<CR>
 
 source $HOME/.config/nvim/vim-plug/plugins.vim
 
