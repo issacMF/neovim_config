@@ -52,10 +52,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " surround quotes
     Plug 'tpope/vim-surround'
 
-
     Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
     \ 'do': 'bash install.sh',
     \ }
+    " Color
+    Plug 'drewtempelmeyer/palenight.vim'
+
+    " Search Ctrl Shift F
+    Plug 'dyng/ctrlsf.vim'
 
 call plug#end()

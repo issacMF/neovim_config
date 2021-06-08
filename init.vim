@@ -1,6 +1,7 @@
 :set number relativenumber
 :set nu rnu
 :set mouse=a
+:colorscheme molokai
 
 " Start NERDTree when Vim starts with a directory argument.
 autocmd StdinReadPre * let s:std_in=1
@@ -38,6 +39,8 @@ cabbrev tp tabprevious
 cabbrev tree NERDTree
 
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+
 let g:airline_theme='google_dark'
 
 " Required for operations modifying multiple buffers like rename.
@@ -51,7 +54,7 @@ nmap <silent> gd <Plug>(lcn-definition)
 nmap <silent> <F2> <Plug>(lcn-rename)
 
 " NERDTree Git Plugin
-"let g:NERDTreeIndicatorMapCustom = {
+let g:NERDTreeIndicatorMapCustom = {
     \ "Modified"  : "✹",
     \ "Staged"    : "✚",
     \ "Untracked" : "✭",
