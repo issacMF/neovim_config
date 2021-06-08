@@ -166,5 +166,9 @@ nnoremap <C-p> :F<CR>
 inoremap <C-p> :F<CR>
 vnoremap <C-p> :F<CR>
 
+nnoremap <C-f> :CtrlSF<CR>
+inoremap <C-f> :CtrlSF<CR>
+vnoremap <C-f> :CtrlSF<CR>
+
 source $HOME/.config/nvim/vim-plug/plugins.vim
 
