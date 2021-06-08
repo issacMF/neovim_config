@@ -37,6 +37,8 @@ cabbrev tn tabnext
 cabbrev tnew tabnew
 cabbrev tp tabprevious
 cabbrev tree NERDTree
+" noremap <C-t> :NERDTreeFocus<CR>
+noremap <C-T> :NERDTreeTabsToggle<CR>
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
@@ -54,7 +56,7 @@ nmap <silent> gd <Plug>(lcn-definition)
 nmap <silent> <F2> <Plug>(lcn-rename)
 
 " NERDTree Git Plugin
-let g:NERDTreeIndicatorMapCustom = {
+let g:NERDTreeGitStatusIndicatorMapCustom = {
     \ "Modified"  : "✹",
     \ "Staged"    : "✚",
     \ "Untracked" : "✭",
